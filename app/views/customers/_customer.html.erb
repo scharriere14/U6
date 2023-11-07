@@ -1,4 +1,5 @@
-  <aside>
+
+  <aside class="column is-3">
     <% if customer.image.present? %>
       <p><%= image_tag customer.image.variant(resize_to_limit: [285, 285]).processed  %></p>
     <% end %>
@@ -7,3 +8,4 @@
     <p><%= customer.email_address %></p>
     <p><%= customer.notes %></p>
   </aside>
+

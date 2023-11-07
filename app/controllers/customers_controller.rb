@@ -5,6 +5,13 @@ class CustomersController < ApplicationController
   end
 
   def index
-    @customers = Customer.all
+    # order by name
+    @customers = Customer.order(:full_name)
   end
+
+  def  missing_email
+    # order by name
+    @customers = Customer.where(email: nil)
+  end
+
 end
