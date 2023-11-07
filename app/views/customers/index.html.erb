@@ -1,0 +1,12 @@
+<%# <h1>Customer List</h1>
+
+<ul>
+  <% @customers.each do |customer| %>
+    <%# <li><%= customer.full_name  - Phone: <%= customer.phone_number</li> %>
+  <%# <% end %>
+<%# </ul> %>
+
+<%# copied from class demo %>
+<section>
+  <%= render @customers %>
+</section>
